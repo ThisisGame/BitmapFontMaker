@@ -6,11 +6,11 @@ BitmapFontMaker是用来制作图片字的工具，之前我一直使用BMFont�
 # 使用简介
 首先 准备图片，图片命名必须是你在代码里用来作为这个图片字标志的字符。
 
+![Image](https://github.com/ThisisGame/BitmapFontMaker/blob/master/BitmapFontMaker/Doc/4.png)
+
 比如 图片字是1，那么就用1。
 
 如果图片字是汉字，比如暴击、那么你可以选择一个特殊字符比如 # 来命名图片，这样你在文本框里输入 # ，就显示的暴击这张图。
-
-![Image](https://github.com/ThisisGame/BitmapFontMaker/blob/master/BitmapFontMaker/Doc/4.png)
 
 打开BitmapFontmaker。
 
