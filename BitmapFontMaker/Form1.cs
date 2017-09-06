@@ -68,8 +68,18 @@ namespace BitmapFontMaker
             }
             StreamWriter tmpStreamWrite = new StreamWriter(tmpPackedTextSavePath);
 
+            string tmpPackedXmlSavePath = tmpDirPath + "/packed.xml";
+            if (File.Exists(tmpPackedXmlSavePath))
+            {
+                File.Delete(tmpPackedXmlSavePath);
+            }
+            StreamWriter tmpStreamWriteXml = new StreamWriter(tmpPackedXmlSavePath);
+
             string tmpDescribeHeader = "info face=\"Arial\" size=32 bold=0 italic=0 charset=\"\" unicode=1 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1 outline=0 common lineHeight = 32 base = 26 scaleW = {0} scaleH = {1} pages = 1 packed = 0 alphaChnl = 1 redChnl = 0 greenChnl = 0 blueChnl = 0";
             tmpStreamWrite.WriteLine(string.Format(tmpDescribeHeader, mPackedSize, mPackedSize));
+
+            string tmpDescribeHeaderXml = "<?xml version=\"1.0\"?><font><info face=\"Arial\" size=\"32\" bold=\"0\" italic=\"0\" charset=\"\" unicode=\"1\" stretchH=\"100\" smooth=\"1\" aa=\"1\" padding=\"0,0,0,0\" spacing=\"1,1\" outline=\"0\"/><common lineHeight=\"32\" base=\"26\" scaleW=\"{0}\" scaleH=\"{1}\" pages=\"1\" packed=\"0\" alphaChnl=\"1\" redChnl=\"0\" greenChnl=\"0\" blueChnl=\"0\"/><pages><page id=\"0\" file=\"packed.png\" /></pages><chars count=\"{2}\">";
+            tmpStreamWriteXml.WriteLine(string.Format(tmpDescribeHeaderXml, mPackedSize, mPackedSize,varMiniPngPath.Length));
 
             Bitmap tmpBitMapPacked = new Bitmap(mPackedSize, mPackedSize);
 
@@ -85,6 +95,7 @@ namespace BitmapFontMaker
 
             string tmpDescribe = "char id={0}   x={1}     y={2}    width={3}    height={4}    xoffset={5}     yoffset={6}     xadvance={7}    page=0  chnl=15";
 
+            string tmpDescribeXml = "<char id=\"{0}\" x=\"{1}\" y=\"{2}\" width=\"{3}\" height=\"{4}\" xoffset=\"{5}\" yoffset=\"{6}\" xadvance=\"{7}\" page=\"0\" chnl=\"15\" />";
 
             for (int tmpMiniPngPathIndex = 0; tmpMiniPngPathIndex < varMiniPngPath.Length; tmpMiniPngPathIndex++)
             {
@@ -179,12 +190,22 @@ namespace BitmapFontMaker
                 string tmpDescribeFinal = string.Format(tmpDescribe, tmpAscii, tmpVector2Start.X, tmpVector2Start.Y , tmpImageMini.Width, tmpImageMini.Height, 0, -tmpImageMini.Height/2, tmpImageMini.Width);
                 tmpStreamWrite.WriteLine(tmpDescribeFinal);
                 tmpStreamWrite.Flush();
+
+
+                string tmpDescribeXmlFinal = string.Format(tmpDescribeXml, tmpAscii, tmpVector2Start.X, tmpVector2Start.Y, tmpImageMini.Width, tmpImageMini.Height, 0, -tmpImageMini.Height / 2, tmpImageMini.Width);
+                tmpStreamWriteXml.WriteLine(tmpDescribeXmlFinal);
+                tmpStreamWriteXml.Flush();
             }
 
            
 
             tmpBitMapPacked.Save(tmpPackedSavePath);
             tmpStreamWrite.Close();
+
+
+            tmpStreamWriteXml.WriteLine("</chars></font>");
+            tmpStreamWriteXml.Flush();
+            tmpStreamWriteXml.Close();
         }
 
         private int mPackedSize = 256;
