@@ -1,0 +1,9 @@
+c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFontMaker\bin\Debug\BitmapFontMaker.exe.config
+c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.csprojResolveAssemblyReference.cache
+c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.Form1.resources
+c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.Properties.Resources.resources
+c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.csproj.GenerateResource.Cache
+c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFontMaker\bin\Debug\BitmapFontMaker.exe
+c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFontMaker\bin\Debug\BitmapFontMaker.pdb
+c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.exe
+c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.pdb
