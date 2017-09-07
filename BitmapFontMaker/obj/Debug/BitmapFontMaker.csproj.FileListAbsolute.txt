@@ -7,3 +7,12 @@ c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFon
 c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFontMaker\bin\Debug\BitmapFontMaker.pdb
 c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.exe
 c:\users\captain\documents\visual studio 2015\Projects\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.pdb
+G:\Github\BitmapFontMaker\BitmapFontMaker\bin\Debug\BitmapFontMaker.exe.config
+G:\Github\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.exe
+G:\Github\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.pdb
+G:\Github\BitmapFontMaker\BitmapFontMaker\bin\Debug\BitmapFontMaker.exe
+G:\Github\BitmapFontMaker\BitmapFontMaker\bin\Debug\BitmapFontMaker.pdb
+G:\Github\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.csprojResolveAssemblyReference.cache
+G:\Github\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.Form1.resources
+G:\Github\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.Properties.Resources.resources
+G:\Github\BitmapFontMaker\BitmapFontMaker\obj\Debug\BitmapFontMaker.csproj.GenerateResource.Cache
